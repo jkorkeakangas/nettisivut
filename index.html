@@ -5,21 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sadonkorjuu Kahvila Konditoria</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
+        <div>
+            <!-- Logo -->
+        </div>
         <h1>Sadonkorjuu Kahvila Konditoria</h1>
         <nav>
-            <a href="kahvilatuotteet.html">Kahvila tuotteet</a><br>
-            <a href="tilaustuotteet.html">Tilaustuotteet</a><br>
-            <a href="meista.html">Meistä</a><br>
-            <a href="#lounas">Lounaslista</a>
+            <ul>
+            <li><a href="kahvilatuotteet.html">Kahvila tuotteet</a></li>
+            <li><a href="tilaustuotteet.html">Tilaustuotteet</a></li>
+            <li><a href="meista.html">Meistä</a></li>
+            <li><a href="#lounas">Lounaslista</a></li>
+            <!-- ostoskori -->
+             </ul>
         </nav>
     </header>
     <!-- Varsinainen sisältö alkaa tästä -->
     <main>
+        <section>
+            <h2>Sadonkorjuu - Rakkaudesta leivontaan jo 10 vuotta </h2>
+            <p>Sadonkorjuu on suomalainen kahvila-konditoria,
+                jossa yhdistyvät laadukkaat raaka-aineet, sesonkien parhaat
+                maut ja käsityönä valmistetut leivonnaiset. Haluamme tarjota asiakkaillemme
+                makuelämyksiä, jotka tuovat yhteen perinteet ja uudenlaiset ruokainnovaatiot.</p>
+        </section>
         <article>
+
             <h2>Ajankohtaista</h2>
             <h3>Syksy on saapunut</h3>
             <p>Sadonkorjuussa on jätetty kesä taakse ja on aika siirtyä syksyn myötä Ruska-teemaan</p>
@@ -33,14 +48,51 @@
                     <li>Kurpitsapiiras</li>
                     <li>Chai latte</li>
                 </ul>
+                <p>Julkaistu: <time datetime="2026-09-15">15.9.2026</time></p>
             </section>
         </article>
+        <section>
+            <h2>Syksyn uutuudet!</h2>
+            <p>Tule testaamaan uusi Puolukkamuffini ja muut uutuudet paikan päälle!</p>
+            <div>
+                <!-- Kuva ja linkki uutuudet kohtaan -->
+            </div>
+        </section>
+        <!-- Kortit sivuille kuvilla -->
+        <section>
+            <h2>Tutustu palveluihimme</h2>
+            <article>
+                <!-- Kahvilatuotteet bg kuva -->
+                <h2>Kahvilatuotteet</h2>
+                <p>Juomat sekä suolaiset ja makeat leivonnaiset</p>
+                <a href="kahvilatuotteet.html">Tutustu tuotteisiin</a>
+            </article>
+            <article>
+                <!-- Tilaustuotteet bg kuva -->
+                <h2>Tilaustuotteet</h2>
+                <p>Kakut ja leivonnaiset juhliin.</p>
+                <a href="tilaustuotteet.html">Tutustu tilaustuotteisiin</a>
+            </article>
+            <article>
+                <!-- Meistä bg kuva -->
+                <h2>Meistä</h2>
+                <p>Tutustu tarinaamme</p>
+                <a href="meista.html">Lue lisää</a>
+            </article>
+        </section>
         <aside>
             <h2 id="lounas">Lounaslista</h2>
             <section>
-               <h3>Maanantai</h3>
-               <p>Kanakeitto</p>
-               <p><strong>V,G</strong></p> 
+                <h3>Maanantai</h3>
+                <p>Metsäsienikeitto <strong>(L, G)</strong></p>
+                <h3>Tiistai</h3>
+                <p>Puolukalla maustettu lihapata <strong>(L, G)</strong></p>
+                <h3>Keskiviikko</h3>
+                <p>Kurpitsakeitto <strong>(V, G)</strong></p>
+                <h3>Torstai</h3>
+                <p>Hernekeitto ja pannukakku <strong>(L)</strong></p>
+                <h3>Perjantai</h3>
+                <p>Paahdettua lohta ja juureksia <strong>(L, G)</strong></p>
 
             </section>
         </aside>
@@ -48,12 +100,25 @@
     </main>
     <footer>
         <section>
-            <h2>Yhteystiedot</h2>
+            <div>
+                <!-- Kuva google maps tai kartta -->
+            </div>
+            <h3>Yhteystiedot</h3>
             <p>Kasarmikatu 2</p>
             <p>00520 Helsinki</p>
-            <p>Aukoloajat</p>
+            <p>+3581231234</p>
+            <p><strong>Kahvila</strong></p>
+            <p>Ma-la klo 9:00-20:00</p>
+            <p>Su klo 10:00-18:00</p>
+            <p><strong>Myynti</strong></p>
+            <p>Ma-pe klo 9:00-18:00</p>
+            <p>La-su klo 9:00-14:00</p>
+            <p>Tuotteet voi tilata suoraan verkkokaupasta tai <a
+                    href="mailto:sadonkorjuu@sadonkorjuu.fi">sähköpostitse.</a></p>
+            <p>Noudot myymälästä, nouto onnistuu myös sovitusti aukioloaikojen ulkopuolella.</p>
+            <p>Seuraa meitä <a href="https://instagram.com/sadonkorjuu" target="_blank" rel="noopener noreferrer">Instagramissa</a></p>
             <p><a href="mailto:sadonkorjuu@sadonkorjuu.fi">Email</a></p>
-            <p>&copy; Janne Korkeakangas</p>
+            <p>&copy; Sadonkorjuu</p>
         </section>
     </footer>
 
