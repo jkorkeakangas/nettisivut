@@ -1,3 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Judson', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: white;
+}
+
+/* Tekstit */
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #f7a01e;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
 p {
-    color: blue;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-image: url("../images/puukaarna.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 30px;
+    margin-bottom: 50px;
+}
+
+
+#logo {
+    font-family: 'Lavishly Yours', cursive;
+    font-size: 90px;
+    font-weight: normal;
+    color: #ffffff;
+    text-shadow:
+        3px 3px 6px rgba(0, 0, 0, 0.8),
+        -3px -3px 6px rgba(0, 0, 0, 0.8);
+}
+
+#logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f7a01e;
+}
+
+.esittely {
+    padding: 60px 80px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 25px;
+    text-align: center;
+}
+
+#esittelyteksti {
+    max-width: 900px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.syksynuutuudet {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.syksynuutuudet h2 {
+    color: #222;
+}
+
+.karuselli {
+    padding: 20px;
+}
+
+.karuselli-item {
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.karuselli-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(70%);
+    transition: 0.3s;
+}
+
+.karuselli-item img:hover {
+    filter: brightness(100%);
+}
+
+.karuselli-item figcaption {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 0;
+    color: #fafafa;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#ajankohtaistaotsikko {
+    text-align: center;
+    margin: 40px 0;
+    color: #222;
+}
+
+.ajankohtaista {
+    background-color: #f7a01e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 30px auto;
+}
+
+
+.ajankohtaista ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+time {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+aside {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+
+}
+
+aside h3 {
+    color: white;
+}
+
+aside p {
+    color: #f7a01e;
+}
+
+footer {
+    background-color: #413e3e;
+    margin-top: 50px;
+    padding: 30px;
+    color: white;
+}
+
+footer h3 {
+    color: white;
+}
+
+
+footer a {
+    color: #f7a01e;
+    text-decoration: none;
+}
+
+.kartta iframe {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.some-linkit a {
+color: white;
+font-size: 2rem;
+margin-right: 15px;
+text-decoration: none;
+}
+
+.some-linkit a:hover {
+color: #f7a01e;
 }
