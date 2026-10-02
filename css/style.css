@@ -10,6 +10,8 @@ body {
     background-color: white;
 }
 
+
+
 /* Tekstit */
 
 h1 {
@@ -51,7 +53,6 @@ header {
     margin-bottom: 50px;
 }
 
-
 #logo {
     font-family: 'Lavishly Yours', cursive;
     font-size: 90px;
@@ -83,6 +84,16 @@ nav a {
 
 nav a:hover {
     color: #f7a01e;
+}
+
+.ostoskori a {
+color: white;
+font-size: 30px;
+text-decoration: none;
+}
+
+.ostoskori a:hover {
+color: #f7a01e;
 }
 
 .esittely {
@@ -151,7 +162,7 @@ nav a:hover {
 }
 
 .ajankohtaista {
-    background-color: #f7a01e;
+    background-color: #f7a01ee6;
     border-radius: 10px;
     padding: 20px;
     width: 80%;

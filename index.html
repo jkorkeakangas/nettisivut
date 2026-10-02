@@ -13,9 +13,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Lavishly+Yours&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Lavishly+Yours&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
@@ -26,210 +24,214 @@
         </p>
         <nav>
             <ul>
-                <li><a href="kahvilatuotteet.html">Kahvila tuotteet</a></li>
+                <li><a href="kahvilatuotteet.html">Kahvilatuotteet</a></li>
                 <li><a href="tilaustuotteet.html">Tilaustuotteet</a></li>
                 <li><a href="meista.html">Meistä</a></li>
                 <li><a href="#lounas">Lounaslista</a></li>
             </ul>
-            <div>
-                <!-- ostoskori -->
+
+            <div class="ostoskori">
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
             </div>
         </nav>
     </header>
     <!-- Varsinainen sisältö alkaa tästä -->
     <main>
-        <section class="esittely">
-            <h1>Kahvila-konditoria Sadonkorjuu <br> Rakkaudesta leivontaan jo 10 vuotta! </h1>
-            <p id="esittelyteksti">Sadonkorjuu on suomalainen kahvila-konditoria,
-                jossa yhdistyvät laadukkaat raaka-aineet, sesonkien parhaat
-                maut ja käsityönä valmistetut leivonnaiset. Haluamme tarjota asiakkaillemme
-                makuelämyksiä, jotka tuovat yhteen perinteet ja uudenlaiset ruokainnovaatiot.</p>
-        </section>
-        <section class="syksynuutuudet">
-            <h2>Syksyn uutuudet!</h2>
-            <p>Tule testaamaan uusi Pistaasilatte ja muut uutuudet paikan päälle!</p>
-            <div class="karuselli">
-                <figure class="karuselli-item" id="slide1">
-                    <img src="images/Puolukka-kinuskikakku.jpg" alt="Puolukka-kinuskikakku">
-                    <figcaption>Puolukka-kinuskikakku</figcaption>
-                </figure>
-                <figure class="karuselli-item" id="slide2">
-                    <img src="images/Sieni-savujuustovohveli.jpg" alt="Sieni-savujuustovohveli">
-                    <figcaption>Sieni-savujuustovohveli</figcaption>
-                </figure>
-                <figure class="karuselli-item" id="slide3">
-                    <img src="images/Pistaasilatte.jpg" alt="Pistaasilatte">
-                    <figcaption>Pistaasilatte</figcaption>
-                </figure>
-                <figure class="karuselli-item" id="slide4">
-                    <img src="images/Kurpitsalatte.jpg" alt="Kurpitsalatte">
-                    <figcaption>Kurpitsalatte</figcaption>
-                </figure>
-            </div>
-        </section>
-        <!--  kahvilatuotteet sivulle oikeaan kohtaan missä tuote -->
-        <section class="infoalue">
-            <div> <!-- Korjaan tätä kunhan lisään flexin tai gridin -->
-                <h2 id="ajankohtaistaotsikko">AJANKOHTAISTA</h2>
-                <article class="ajankohtaista">
-                    <section>
-                        <h3>Syksy on saapunut</h3>
-                        <p>Sadonkorjuussa on jätetty kesä taakse ja on aika siirtyä syksyn myötä Ruska-teemaan</p>
-                        <p>Julkaistu: <time datetime="2026-09-18">18.9.2026</time></p>
-                        <h3>Herkulliset uutuudet</h3>
-                        <p>Syksyn herkullisimmat uutuudet ovat nyt saatavilla: Puolukka-kinuskikakku,
-                            Sieni-savujuustovohveli, Pistaasilatte ja Kurpitsalatte</p>
-                        <p>Julkaistu: <time datetime="2026-09-15">15.9.2026</time></p>
-                    </section>
-                    <section>
-                        <h3>Sadonkorjuun 10-vuotisviikko</h3>
-                        <p>
-                            Juhlistimme syyskuun alussa kahvilamme 10-vuotista taivalta
-                            erikoistarjouksilla, ilmaisilla kahvitäydennyksillä sekä
-                            juhlateemaisilla leivoksilla.
-                        </p>
-                        <p>Julkaistu: <time datetime="2026-09-05">5.9.2026</time></p>
-                    </section>
-                    <section>
-                        <h3>Kiitos Suvi-teemaisesta kesästä</h3>
-                        <p>
-                            Kesän Suvi-teema saatiin päätökseen elokuun lopussa.
-                            Haluamme kiittää kaikkia asiakkaitamme aurinkoisesta
-                            ja vilkkaasta kesästä.
-                        </p>
-                        <p>Julkaistu: <time datetime="2026-08-31">31.8.2026</time></p>
-                    </section>
-                    <section>
-                        <h3>Mansikkaviikot keräsivät kävijöitä</h3>
-                        <p>
-                            Kesäkuun ja heinäkuun aikana mansikkaleivokset nousivat
-                            kesän myydyimmäksi tuotteeksi.
-                        </p>
-                        <p>Julkaistu: <time datetime="2026-08-02">2.8.2026</time></p>
-                    </section>
-                    <section>
-                        <h3>Terassi avattu kesäkaudelle</h3>
-                        <p>
-                            Kesäterassi avattiin jälleen asiakkaiden käyttöön.
-                            Aurinkoisina päivinä tarjoilimme myös ulkona valmistettuja
-                            jääkahveja.
-                        </p>
-                        <p>Julkaistu: <time datetime="2026-06-15">15.6.2026</time></p>
-                    </section>
-                    <section>
-                        <h3>Uusi jäätelövalikoima saapui</h3>
-                        <p>
-                            Valikoimaan lisättiin mustikka-, mansikka-
-                            ja vaniljapohjaisia artesaanijäätelöitä.
-                        </p>
-                        <p>Julkaistu: <time datetime="2026-06-03">3.6.2026</time></p>
-                    </section>
-                    <section>
-                        <h3>Kevään Verso-teema vaihtuu Suviin</h3>
-                        <p>
-                            Kevään raikkaista mauista siirryttiin kohti kesän marjoja,
-                            kukkia ja aurinkoisia herkkuja.
-                        </p>
-                        <p>Julkaistu: <time datetime="2026-05-31">31.5.2026</time></p>
-                    </section>
-                    <section>
-                        <h3>Kevään ensimmäiset raparperileivokset</h3>
-                        <p>
-                            Vitriiniin saapuivat kevään odotetut
-                            raparperi-vaniljaleivokset.
-                        </p>
-                        <p>Julkaistu: <time datetime="2026-05-20">20.5.2026</time></p>
-                    </section>
-                    <section>
-                        <h3>Pääsiäisen juhlakakut myyntiin</h3>
-                        <p>
-                            Tarjolle julkaistiin pääsiäisen sesonkikakut
-                            ja suklaaherkut.
-                        </p>
-                        <p>Julkaistu: <time datetime="2026-04-04">4.4.2026</time></p>
-                    </section>
-                    <section>
-                        <h3>Kevään erikoiskahvi esittäytyy</h3>
-                        <p>
-                            Kevään kunniaksi lanseerattiin hunajalla ja
-                            kardemummalla maustettu erikoislatte.
-                        </p>
-                        <p>Julkaistu: <time datetime="2026-03-12">12.3.2026</time></p>
-                    </section>
-                    <section>
-                        <h3>Routa-teema väistyy kevään tieltä</h3>
-                        <p>
-                            Talvikausi on päättynyt ja kahvilassa katseet
-                            suunnataan kohti vihertyvää kevättä.
-                        </p>
-                        <p>Julkaistu: <time datetime="2026-03-01">1.3.2026</time></p>
-                    </section>
-                </article>
-            </div>
-            <!-- TÄmä muuttuu vielä -->
-            <aside>
-                <h2>Lounaslista</h2>
-                <section>
-                    <h3>Maanantai</h3>
-                    <p>Metsäsienikeitto <strong>(L, G)</strong></p>
-                    <h3>Tiistai</h3>
-                    <p>Puolukalla maustettu lihapata <strong>(L, G)</strong></p>
-                    <h3>Keskiviikko</h3>
-                    <p>Kurpitsakeitto <strong>(V, G)</strong></p>
-                    <h3>Torstai</h3>
-                    <p>Hernekeitto ja pannukakku <strong>(L)</strong></p>
-                    <h3>Perjantai</h3>
-                    <p>Paahdettua lohta ja juureksia <strong>(L, G)</strong></p>
+        <section class=" esittely">
+                        <h1>Kahvila-konditoria Sadonkorjuu <br> Rakkaudesta leivontaan jo 10 vuotta! </h1>
+                        <p id="esittelyteksti">Sadonkorjuu on suomalainen kahvila-konditoria,
+                            jossa yhdistyvät laadukkaat raaka-aineet, sesonkien parhaat
+                            maut ja käsityönä valmistetut leivonnaiset. Haluamme tarjota asiakkaillemme
+                            makuelämyksiä, jotka tuovat yhteen perinteet ja uudenlaiset ruokainnovaatiot.</p>
+                        </section>
+                        <section class="syksynuutuudet">
+                            <h2>Syksyn uutuudet!</h2>
+                            <p>Tule testaamaan uusi Pistaasilatte ja muut uutuudet paikan päälle!</p>
+                            <div class="karuselli">
+                                <figure class="karuselli-item" id="slide1">
+                                    <img src="images/Puolukka-kinuskikakku.jpg" alt="Puolukka-kinuskikakku">
+                                    <figcaption>Puolukka-kinuskikakku</figcaption>
+                                </figure>
+                                <figure class="karuselli-item" id="slide2">
+                                    <img src="images/Sieni-savujuustovohveli.jpg" alt="Sieni-savujuustovohveli">
+                                    <figcaption>Sieni-savujuustovohveli</figcaption>
+                                </figure>
+                                <figure class="karuselli-item" id="slide3">
+                                    <img src="images/Pistaasilatte.jpg" alt="Pistaasilatte">
+                                    <figcaption>Pistaasilatte</figcaption>
+                                </figure>
+                                <figure class="karuselli-item" id="slide4">
+                                    <img src="images/Kurpitsalatte.jpg" alt="Kurpitsalatte">
+                                    <figcaption>Kurpitsalatte</figcaption>
+                                </figure>
+                            </div>
+                        </section>
+                        <!--  kahvilatuotteet sivulle oikeaan kohtaan missä tuote -->
+                        <section class="infoalue">
+                            <div> <!-- Korjaan tätä kunhan lisään flexin tai gridin -->
+                                <h2 id="ajankohtaistaotsikko">AJANKOHTAISTA</h2>
+                                <article class="ajankohtaista">
+                                    <section>
+                                        <h3>Syksy on saapunut</h3>
+                                        <p>Sadonkorjuussa on jätetty kesä taakse ja on aika siirtyä syksyn myötä
+                                            Ruska-teemaan</p>
+                                        <p>Julkaistu: <time datetime="2026-09-18">18.9.2026</time></p>
+                                        <h3>Herkulliset uutuudet</h3>
+                                        <p>Syksyn herkullisimmat uutuudet ovat nyt saatavilla: Puolukka-kinuskikakku,
+                                            Sieni-savujuustovohveli, Pistaasilatte ja Kurpitsalatte</p>
+                                        <p>Julkaistu: <time datetime="2026-09-15">15.9.2026</time></p>
+                                    </section>
+                                    <section>
+                                        <h3>Sadonkorjuun 10-vuotisviikko</h3>
+                                        <p>
+                                            Juhlistimme syyskuun alussa kahvilamme 10-vuotista taivalta
+                                            erikoistarjouksilla, ilmaisilla kahvitäydennyksillä sekä
+                                            juhlateemaisilla leivoksilla.
+                                        </p>
+                                        <p>Julkaistu: <time datetime="2026-09-05">5.9.2026</time></p>
+                                    </section>
+                                    <section>
+                                        <h3>Kiitos Suvi-teemaisesta kesästä</h3>
+                                        <p>
+                                            Kesän Suvi-teema saatiin päätökseen elokuun lopussa.
+                                            Haluamme kiittää kaikkia asiakkaitamme aurinkoisesta
+                                            ja vilkkaasta kesästä.
+                                        </p>
+                                        <p>Julkaistu: <time datetime="2026-08-31">31.8.2026</time></p>
+                                    </section>
+                                    <section>
+                                        <h3>Mansikkaviikot keräsivät kävijöitä</h3>
+                                        <p>
+                                            Kesäkuun ja heinäkuun aikana mansikkaleivokset nousivat
+                                            kesän myydyimmäksi tuotteeksi.
+                                        </p>
+                                        <p>Julkaistu: <time datetime="2026-08-02">2.8.2026</time></p>
+                                    </section>
+                                    <section>
+                                        <h3>Terassi avattu kesäkaudelle</h3>
+                                        <p>
+                                            Kesäterassi avattiin jälleen asiakkaiden käyttöön.
+                                            Aurinkoisina päivinä tarjoilimme myös ulkona valmistettuja
+                                            jääkahveja.
+                                        </p>
+                                        <p>Julkaistu: <time datetime="2026-06-15">15.6.2026</time></p>
+                                    </section>
+                                    <section>
+                                        <h3>Uusi jäätelövalikoima saapui</h3>
+                                        <p>
+                                            Valikoimaan lisättiin mustikka-, mansikka-
+                                            ja vaniljapohjaisia artesaanijäätelöitä.
+                                        </p>
+                                        <p>Julkaistu: <time datetime="2026-06-03">3.6.2026</time></p>
+                                    </section>
+                                    <section>
+                                        <h3>Kevään Verso-teema vaihtuu Suviin</h3>
+                                        <p>
+                                            Kevään raikkaista mauista siirryttiin kohti kesän marjoja,
+                                            kukkia ja aurinkoisia herkkuja.
+                                        </p>
+                                        <p>Julkaistu: <time datetime="2026-05-31">31.5.2026</time></p>
+                                    </section>
+                                    <section>
+                                        <h3>Kevään ensimmäiset raparperileivokset</h3>
+                                        <p>
+                                            Vitriiniin saapuivat kevään odotetut
+                                            raparperi-vaniljaleivokset.
+                                        </p>
+                                        <p>Julkaistu: <time datetime="2026-05-20">20.5.2026</time></p>
+                                    </section>
+                                    <section>
+                                        <h3>Pääsiäisen juhlakakut myyntiin</h3>
+                                        <p>
+                                            Tarjolle julkaistiin pääsiäisen sesonkikakut
+                                            ja suklaaherkut.
+                                        </p>
+                                        <p>Julkaistu: <time datetime="2026-04-04">4.4.2026</time></p>
+                                    </section>
+                                    <section>
+                                        <h3>Kevään erikoiskahvi esittäytyy</h3>
+                                        <p>
+                                            Kevään kunniaksi lanseerattiin hunajalla ja
+                                            kardemummalla maustettu erikoislatte.
+                                        </p>
+                                        <p>Julkaistu: <time datetime="2026-03-12">12.3.2026</time></p>
+                                    </section>
+                                    <section>
+                                        <h3>Routa-teema väistyy kevään tieltä</h3>
+                                        <p>
+                                            Talvikausi on päättynyt ja kahvilassa katseet
+                                            suunnataan kohti vihertyvää kevättä.
+                                        </p>
+                                        <p>Julkaistu: <time datetime="2026-03-01">1.3.2026</time></p>
+                                    </section>
+                                </article>
+                            </div>
+                            <!-- TÄmä muuttuu vielä -->
+                            <aside>
+                                <h2>Lounaslista</h2>
+                                <section>
+                                    <h3>Maanantai</h3>
+                                    <p>Metsäsienikeitto <strong>(L, G)</strong></p>
+                                    <h3>Tiistai</h3>
+                                    <p>Puolukalla maustettu lihapata <strong>(L, G)</strong></p>
+                                    <h3>Keskiviikko</h3>
+                                    <p>Kurpitsakeitto <strong>(V, G)</strong></p>
+                                    <h3>Torstai</h3>
+                                    <p>Hernekeitto ja pannukakku <strong>(L)</strong></p>
+                                    <h3>Perjantai</h3>
+                                    <p>Paahdettua lohta ja juureksia <strong>(L, G)</strong></p>
 
-                </section>
-            </aside>
-        </section>
-    </main>
-    <footer>
-        <section class="kartta">
-            <!-- Kuva google maps tai kartta -->
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.2718829573753!2d24.948286099999997!3d60.159677800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bb80148b583%3A0x616528fe61711db5!2sKasarmikatu%202%2C%2000140%20Helsinki!5e0!3m2!1sfi!2sfi!4v1790938823045!5m2!1sfi!2sfi"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        </section>
-        <section>
-            <div class="some-linkit">
-                <a href="https://facebook.com/sadonkorjuu" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
+                                </section>
+                            </aside>
+                        </section>
+                        </main>
+                        <footer>
+                            <section class="kartta">
+                                <!-- Kuva google maps tai kartta -->
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.2718829573753!2d24.948286099999997!3d60.159677800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bb80148b583%3A0x616528fe61711db5!2sKasarmikatu%202%2C%2000140%20Helsinki!5e0!3m2!1sfi!2sfi!4v1790938823045!5m2!1sfi!2sfi"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                            </section>
+                            <section>
+                                <div class="some-linkit">
+                                    <a href="https://facebook.com/sadonkorjuu" target="_blank">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                    <a href="https://instagram.com/sadonkorjuu" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="https://youtube.com/@sadonkorjuu" target="_blank" <i
+                                        class="fa-brands fa-youtube">
+                    </i>
                 </a>
-                <a href="https://instagram.com/sadonkorjuu" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://youtube.com/@sadonkorjuu" target="_blank"
-                     <i class="fa-brands fa-youtube"></i>
-                </a>
-                <a href="https://x.com/sadonkorjuu" target="_blank"
-                     <i class="fa-brands fa-x-twitter"></i>
+                <a href="https://x.com/sadonkorjuu" target="_blank" <i class="fa-brands fa-x-twitter"></i>
                 </a>
             </div>
-        </section>
-        <section>
-            <h3>Yhteystiedot</h3>
-            <p>Kasarmikatu 2</p>
-            <p>00140 Helsinki</p>
-            <p>+3581231234</p>
-            <p><a href="mailto:sadonkorjuu@sadonkorjuu.fi">sadonkorjuu@sadonkorjuu.fi.</a></p>
-        </section>
-        <section>
-            <h3>Kahvila</h3>
-            <p><strong>Ma-la klo 9:00-20:00</strong></p>
-            <p><strong>Su klo 10:00-18:00</strong></p>
-        </section>
-        <section>
-            <h3>Myynti</h3>
-            <p><strong>Ma-pe klo 9:00-18:00</strong></p>
-            <p><strong>La-su klo 9:00-14:00</strong></p>
-            <p>Tuotteet voi tilata suoraan verkkokaupasta</p>
-            <p>Noudot myymälästä, nouto onnistuu myös sovitusti aukioloaikojen ulkopuolella.</p>
-            <p>&copy; Sadonkorjuu</p>
-        </section>
-    </footer>
+            </section>
+            <section>
+                <h3>Yhteystiedot</h3>
+                <p>Kasarmikatu 2</p>
+                <p>00140 Helsinki</p>
+                <p>+3581231234</p>
+                <p><a href="mailto:sadonkorjuu@sadonkorjuu.fi">sadonkorjuu@sadonkorjuu.fi.</a></p>
+            </section>
+            <section>
+                <h3>Kahvila</h3>
+                <p><strong>Ma-la klo 9:00-20:00</strong></p>
+                <p><strong>Su klo 10:00-18:00</strong></p>
+            </section>
+            <section>
+                <h3>Myynti</h3>
+                <p><strong>Ma-pe klo 9:00-18:00</strong></p>
+                <p><strong>La-su klo 9:00-14:00</strong></p>
+                <p>Tuotteet voi tilata suoraan verkkokaupasta</p>
+                <p>Noudot myymälästä, nouto onnistuu myös sovitusti aukioloaikojen ulkopuolella.</p>
+                <p>&copy; Sadonkorjuu</p>
+            </section>
+            </footer>
 
 </body>
 
