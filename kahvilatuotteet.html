@@ -1,24 +1,243 @@
-   <!-- Siirsin tänne koska muutin vähän visiota, mikään ei välttämättä säily -->
-   </section>
-        </article>
-       
-            <h2>Tutustu palveluihimme</h2>
-            <article>
-                <!-- Kahvilatuotteet bg kuva -->
-                <h2>Kahvilatuotteet</h2>
-                <p>Juomat sekä suolaiset ja makeat leivonnaiset</p>
-                <a href="kahvilatuotteet.html">Tutustu tuotteisiin</a>
-            </article>
-            <article>
-                <!-- Tilaustuotteet bg kuva -->
-                <h2>Tilaustuotteet</h2>
-                <p>Kakut ja leivonnaiset juhliin.</p>
-                <a href="tilaustuotteet.html">Tutustu tilaustuotteisiin</a>
-            </article>
-            <article>
-                <!-- Meistä bg kuva -->
-                <h2>Meistä</h2>
-                <p>Tutustu tarinaamme</p>
-                <a href="meista.html">Lue lisää</a>
-            </article>
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kahvilatuotteet | Sadonkorjuu</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Lavishly+Yours&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+
+        <video autoplay muted loop playsinline>
+            <source src="images/kahvilavideo.mp4" </source>
+        </video>
+        <div class="video-sisalto">
+
+            <p id="logo">
+                <a href="index.html">Sadonkorjuu</a>
+            </p>
+        </div>
+
+    </header>
+    <nav class="paa-navigaatio">
+        <ul>
+            <li><a href="kahvilatuotteet.html">Kahvilatuotteet</a></li>
+            <li><a href="tilaustuotteet.html">Tilauskakut</a></li>
+            <li><a href="meista.html">Meistä</a></li>
+        </ul>
+
+        <div class="ostoskori">
+            <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+    </nav>
+    <!-- Varsinainen sisältö alkaa tästä -->
+    <main>
+        <section class=" esittely">
+            <h1>AINA VASTALEIVOTUT HERKUT KAHVILASTA! </h1>
+            <p id="esittelyteksti">Kahvilatuotteidemme valikoimasta löydät sekä makeat että suolaiset
+        herkut jokaiseen hetkeen. Valmistamme tuotteemme päivittäin tuoreista
+        raaka-aineista ja sesongin parhaista mauista inspiroituen. Valikoimaamme
+        kuuluu erikoiskahveja, käsintehtyjä leivonnaisia, suolaisia välipaloja sekä
+        vaihtoehtoja erityisruokavalioita noudattaville asiakkaille.</p>
         </section>
+        <section class="syksynuutuudet">
+            <h2>Syksyn uutuudet!</h2>
+            <p>Tule testaamaan uusi Pistaasilatte ja muut uutuudet paikan päälle!</p>
+            <div class="karuselli">
+                <figure class="karuselli-item" id="slide1">
+                    <img src="images/Puolukka-kinuskikakku.jpg" alt="Puolukka-kinuskikakku">
+                    <figcaption>Puolukka-kinuskikakku</figcaption>
+                </figure>
+                <figure class="karuselli-item" id="slide2">
+                    <img src="images/Sieni-savujuustovohveli.jpg" alt="Sieni-savujuustovohveli">
+                    <figcaption>Sieni-savujuustovohveli</figcaption>
+                </figure>
+                <figure class="karuselli-item" id="slide3">
+                    <img src="images/Pistaasilatte.jpg" alt="Pistaasilatte">
+                    <figcaption>Pistaasilatte</figcaption>
+                </figure>
+                <figure class="karuselli-item" id="slide4">
+                    <img src="images/Kurpitsalatte.jpg" alt="Kurpitsalatte">
+                    <figcaption>Kurpitsalatte</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section>
+            <h2 class="tuoteotsikko">Juomat</h2>
+
+            <div class="tuoteruudukko">
+
+                <article class="tuotekortti">
+                    <img src="images/juoma1.jpg" alt="Suodatinkahvi">
+                    <h3>Suodatinkahvi</h3>
+                </article>
+
+                <article class="tuotekortti">
+                    <img src="images/juoma2.jpg" alt="Espresso">
+                    <h3>Espresso</h3>
+                </article>
+
+                <article class="tuotekortti">
+                    <img src="images/juoma3.jpg" alt="Cappuccino">
+                    <h3>Cappuccino</h3>
+                </article>
+
+                <article class="tuotekortti">
+                    <img src="images/juoma4.jpg" alt="Café Latte">
+                    <h3>Café Latte</h3>
+                </article>
+
+                <article class="tuotekortti">
+                    <img src="images/juoma5.jpg" alt="Haudutettu tee">
+                    <h3>Haudutettu tee</h3>
+                </article>
+
+                <article class="tuotekortti">
+                    <img src="images/juoma6.jpg" alt="Kaakao">
+                    <h3>Kaakao</h3>
+                </article>
+
+            </div>
+        </section>
+
+        <section>
+            <h2 class="tuoteotsikko">Makeat leivonnaiset</h2>
+
+            <div class="tuoteruudukko">
+
+                <article class="tuotekortti">
+                    <img src="images/makea1.jpg" alt="Korvapuusti">
+                    <h3>Korvapuusti</h3>
+                </article>
+
+                <article class="tuotekortti">
+                    <img src="images/makea2.jpg" alt="Voisilmäpulla">
+                    <h3>Voisilmäpulla</h3>
+                </article>
+
+                <article class="tuotekortti">
+                    <img src="images/makea3.jpg" alt="Mustikkamuffini">
+                    <h3>Mustikkamuffini</h3>
+                </article>
+
+                <article class="tuotekortti">
+                    <img src="images/makea4.jpg" alt="Omenapiirakka">
+                    <h3>Omenapiirakka</h3>
+                </article>
+
+                <article class="tuotekortti">
+                    <img src="images/makea5.jpg" alt="Juustokakku">
+                    <h3>Juustokakku</h3>
+                </article>
+
+                <article class="tuotekortti">
+                    <img src="images/makea6.jpg" alt="Suklaaleivos">
+                    <h3>Suklaaleivos</h3>
+                </article>
+
+            </div>
+        </section>
+
+        <section>
+            <h2 class="tuoteotsikko">Suolaiset leivonnaiset</h2>
+
+            <div class="tuoteruudukko">
+
+                <article class="tuotekortti">
+                    <img src="images/suolainen1.jpg" alt="Kinkku-juustocroissant">
+                    <h3>Kinkku-juustocroissant</h3>
+                </article>
+
+                <article class="tuotekortti">
+                    <img src="images/suolainen2.jpg" alt="Kana-caesarcroissant">
+                    <h3>Kana-caesarcroissant</h3>
+                </article>
+
+                <article class="tuotekortti">
+                    <img src="images/suolainen3.jpg" alt="Lohipiiras">
+                    <h3>Lohipiiras</h3>
+                </article>
+
+                <article class="tuotekortti">
+                    <img src="images/suolainen4.jpg" alt="Feta-pinaattipiiras">
+                    <h3>Feta-pinaattipiiras</h3>
+                </article>
+
+                <article class="tuotekortti">
+                    <img src="images/suolainen5.jpg" alt="Juustosämpylä">
+                    <h3>Juustosämpylä</h3>
+                </article>
+
+                <article class="tuotekortti">
+                    <img src="images/suolainen6.jpg" alt="Kasvispiirakka">
+                    <h3>Kasvispiirakka</h3>
+                </article>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="kartta">
+            <!-- Kuva google maps tai kartta -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.2718829573753!2d24.948286099999997!3d60.159677800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bb80148b583%3A0x616528fe61711db5!2sKasarmikatu%202%2C%2000140%20Helsinki!5e0!3m2!1sfi!2sfi!4v1790938823045!5m2!1sfi!2sfi"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
+
+        <section>
+            <h3>Yhteystiedot</h3>
+            <p>Kasarmikatu 2</p>
+            <p>00140 Helsinki</p>
+            <p>+3581231234</p>
+            <p><a href="mailto:sadonkorjuu@sadonkorjuu.fi">sadonkorjuu@sadonkorjuu.fi.</a></p>
+            <div class="some-linkit">
+                <a href="https://facebook.com/sadonkorjuu-kahvilakonditoria" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://instagram.com/sadonkorjuu-kahvilakonditoria" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com/@sadonkorjuu-kahvilakonditoria" target="_blank" <i
+                    class="fa-brands fa-youtube">
+                    </i>
+                </a>
+                <a href="https://x.com/sadonkorjuu-kahvilakonditoria" target="_blank" <i
+                    class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+        </section>
+        <section>
+            <h3>Kahvila</h3>
+            <p><strong>Ma-la klo 9:00-20:00</strong></p>
+            <p><strong>Su klo 10:00-18:00</strong></p>
+        </section>
+        <section>
+            <h3>Myynti</h3>
+            <p><strong>Ma-pe klo 9:00-18:00</strong></p>
+            <p><strong>La-su klo 9:00-14:00</strong></p>
+            <p>Tuotteet voi tilata suoraan verkkokaupasta</p>
+            <p>Noudot myymälästä, nouto onnistuu myös sovitusti aukioloaikojen ulkopuolella.</p>
+            <p>&copy; Sadonkorjuu</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>
