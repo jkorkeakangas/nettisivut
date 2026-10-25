@@ -199,9 +199,9 @@ SYKSYN UUTUUDET
 ETUSIVUN AJANKOHTAISTA JA LOUNASLISTA
 --------------------------------------------------------------------------------------------------*/
 .infoalue {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     gap: 30px;
-    align-items: flex-start;
     width: 95%;
     margin: 0 auto;
     max-width: 1600px;
@@ -219,7 +219,6 @@ AJANKOHTAISTA
     background-color: #f7a01ee6;
     border-radius: 10px;
     padding: 20px;
-    flex: 3;
     min-height: 550px;
     max-height: 550px;
     overflow-y: auto;
@@ -240,7 +239,7 @@ time {
 LOUNASLISTA
 --------------------------------------------------------------------------------------------------*/
 .lounasalue {
-    flex: 0 0 340px;
+    width: 100%;
 }
 .lounasalue h2 {
     color: #222;
