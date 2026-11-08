@@ -17,6 +17,7 @@
         href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Lavishly+Yours&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <body>
@@ -58,24 +59,49 @@
         <section class="syksynuutuudet">
             <h2>Syksyn uutuudet!</h2>
             <p>Tule testaamaan uusi Pistaasilatte ja muut uutuudet paikan päälle!</p>
-            <div class="karuselli">
-                <figure class="karuselli-item" id="slide1">
-                    <img src="images/Puolukka-kinuskikakku.jpg" alt="Puolukka-kinuskikakku">
-                    <figcaption>Puolukka-kinuskikakku</figcaption>
-                </figure>
-                <figure class="karuselli-item" id="slide2">
-                    <img src="images/Sieni-savujuustovohveli.jpg" alt="Sieni-savujuustovohveli">
-                    <figcaption>Sieni-savujuustovohveli</figcaption>
-                </figure>
-                <figure class="karuselli-item" id="slide3">
-                    <img src="images/Pistaasilatte.jpg" alt="Pistaasilatte">
-                    <figcaption>Pistaasilatte</figcaption>
-                </figure>
-                <figure class="karuselli-item" id="slide4">
-                    <img src="images/Kurpitsalatte.jpg" alt="Kurpitsalatte">
-                    <figcaption>Kurpitsalatte</figcaption>
-                </figure>
-            </div>
+           <div class="karuselli">
+
+    <input type="radio" name="slider" id="kuva1" checked>
+    <input type="radio" name="slider" id="kuva2">
+    <input type="radio" name="slider" id="kuva3">
+    <input type="radio" name="slider" id="kuva4">
+
+    <div class="karuselli-kuvat">
+
+        <figure class="karuselli-item">
+            <img src="images/Puolukka-kinuskikakku.jpg" alt="Puolukka-kinuskikakku"  width="600"
+     height="400">
+            <figcaption>Puolukka-kinuskikakku</figcaption>
+        </figure>
+
+        <figure class="karuselli-item">
+            <img src="images/Sieni-savujuustovohveli.jpg" alt="Sieni-savujuustovohveli"  width="600"
+     height="400">
+            <figcaption>Sieni-savujuustovohveli</figcaption>
+        </figure>
+
+        <figure class="karuselli-item">
+            <img src="images/Pistaasilatte.jpg" alt="Pistaasilatte"  width="600"
+     height="400">
+            <figcaption>Pistaasilatte</figcaption>
+        </figure>
+
+        <figure class="karuselli-item">
+            <img src="images/Kurpitsalatte.jpg" alt="Kurpitsalatte"  width="600"
+     height="400">
+            <figcaption>Kurpitsalatte</figcaption>
+        </figure>
+
+    </div>
+
+    <div class="karuselli-napit">
+        <label for="kuva1"></label>
+        <label for="kuva2"></label>
+        <label for="kuva3"></label>
+        <label for="kuva4"></label>
+    </div>
+
+</div>
         </section>
         <!--  kahvilatuotteet sivulle oikeaan kohtaan missä tuote -->
         <section class="infoalue">

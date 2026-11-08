@@ -112,8 +112,6 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 80px;
-
-    list-style: none;
 }
 
 nav a {
@@ -136,6 +134,15 @@ text-decoration: none;
 .ostoskori a:hover {
 color: #f7a01e;
 }
+/*-------------------------------------------------------------------------------------------------
+MAIN
+--------------------------------------------------------------------------------------------------*/
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
 /*-------------------------------------------------------------------------------------------------
 ESITTELYTEKSTI
 --------------------------------------------------------------------------------------------------*/
@@ -163,37 +170,100 @@ SYKSYN UUTUUDET
 .syksynuutuudet h2 {
     color: #222;
 }
-
+/*-------------------------------------------------------------------------------------------------
+KUVAKARUSELLI
+--------------------------------------------------------------------------------------------------*/
 .karuselli {
-    padding: 20px;
+    background-color: #f7a01ee6;
+    border-radius: 10px;
+    padding: 10px 10px 5px 10px;
+
+    max-width: 900px;
+    margin: 30px auto 0 auto;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.karuselli input {
+    display: none;
+}
+
+.karuselli-kuvat {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    width: 400%;
+    transition: transform 0.5s ease;
 }
 
 .karuselli-item {
-    position: relative;
-    width: 90%;
-    max-width: 600px;
+    flex: 0 0 25%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 25%;
+    flex-shrink: 0;
 }
 
 .karuselli-item img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 450px;
     object-fit: cover;
     border-radius: 10px;
 }
 
 .karuselli-item figcaption {
+    position: static;
+    color: #222;
+    font-size: 28px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.slide figcaption {
+    margin-top: 10px;
+}
+
+#kuva1:checked ~ .karuselli-kuvat {
+    transform: translateX(0%);
+}
+
+#kuva2:checked ~ .karuselli-kuvat {
+    transform: translateX(-25%);
+}
+
+#kuva3:checked ~ .karuselli-kuvat {
+    transform: translateX(-50%);
+}
+
+#kuva4:checked ~ .karuselli-kuvat {
+    transform: translateX(-75%);
+}
+
+.karuselli-napit {
     position: absolute;
-    top: 25px;
-    left: 25px;
-    right: 0;
-    color: #fafafa;
-    text-align: left;
-    font-size: 30px;
-    font-weight: bold;
+    bottom: 100px;
+    width: 100%;
+    text-align: center;
+    left: 0;
+}
+
+.karuselli-napit label {
+    display: inline-block;
+
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+
+    background-color: rgba(255,255,255,0.8);
+
+    cursor: pointer;
+
+    margin: 0 5px;
+}
+
+.karuselli-napit label:hover {
+    background-color: #222
 }
 /*-------------------------------------------------------------------------------------------------
 ETUSIVUN AJANKOHTAISTA JA LOUNASLISTA
@@ -202,9 +272,6 @@ ETUSIVUN AJANKOHTAISTA JA LOUNASLISTA
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 30px;
-    width: 95%;
-    margin: 0 auto;
-    max-width: 1600px;
 }
 /*-------------------------------------------------------------------------------------------------
 AJANKOHTAISTA
@@ -253,7 +320,7 @@ aside {
     padding: 20px;
     margin: 0px;
     text-align: center;
-    height: 550px;
+    min-height: 550px;
 
 }
 
@@ -272,7 +339,6 @@ KAHVILATUOTTEET Ja TILAUTUOTTEET
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 
-    width: 90%;
     margin: 30px auto 60px auto;
 }
 
@@ -303,8 +369,6 @@ KAHVILATUOTTEET Ja TILAUTUOTTEET
 MEISTÄ SIVU
 --------------------------------------------------------------------------------------------------*/
 .tarinat {
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 0 40px;
 }
 
