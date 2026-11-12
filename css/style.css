@@ -45,6 +45,7 @@ p {
     font-size: 22px;
     margin-bottom: 5px;
 }
+
 /*-------------------------------------------------------------------------------------------------
 HEADER
 --------------------------------------------------------------------------------------------------*/
@@ -53,27 +54,29 @@ header {
     overflow: hidden;
     height: 600px;
 }
+
 /*-------------------------------------------------------------------------------------------------
 HEADER VIDEO
 --------------------------------------------------------------------------------------------------*/
 header video {
-width: 100%;
-height: 100%;
-position: absolute;
-inset: 0;
-z-index: 0;
-object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    object-fit: cover;
 }
 
 .video-sisalto {
-position: absolute;
-inset: 0;
-z-index: 2;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 /*-------------------------------------------------------------------------------------------------
 LOGO
 --------------------------------------------------------------------------------------------------*/
@@ -92,6 +95,7 @@ LOGO
     text-decoration: none;
     color: inherit;
 }
+
 /*-------------------------------------------------------------------------------------------------
 NAVIGAATIO
 --------------------------------------------------------------------------------------------------*/
@@ -126,14 +130,15 @@ nav a:hover {
 }
 
 .ostoskori a {
-color: white;
-font-size: 30px;
-text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
 }
 
 .ostoskori a:hover {
-color: #f7a01e;
+    color: #f7a01e;
 }
+
 /*-------------------------------------------------------------------------------------------------
 MAIN
 --------------------------------------------------------------------------------------------------*/
@@ -159,6 +164,7 @@ ESITTELYTEKSTI
     font-weight: bold;
     font-size: 25px;
 }
+
 /*-------------------------------------------------------------------------------------------------
 SYKSYN UUTUUDET
 --------------------------------------------------------------------------------------------------*/
@@ -170,6 +176,7 @@ SYKSYN UUTUUDET
 .syksynuutuudet h2 {
     color: #222;
 }
+
 /*-------------------------------------------------------------------------------------------------
 KUVAKARUSELLI
 --------------------------------------------------------------------------------------------------*/
@@ -223,19 +230,19 @@ KUVAKARUSELLI
     margin-top: 10px;
 }
 
-#kuva1:checked ~ .karuselli-kuvat {
+#kuva1:checked~.karuselli-kuvat {
     transform: translateX(0%);
 }
 
-#kuva2:checked ~ .karuselli-kuvat {
+#kuva2:checked~.karuselli-kuvat {
     transform: translateX(-25%);
 }
 
-#kuva3:checked ~ .karuselli-kuvat {
+#kuva3:checked~.karuselli-kuvat {
     transform: translateX(-50%);
 }
 
-#kuva4:checked ~ .karuselli-kuvat {
+#kuva4:checked~.karuselli-kuvat {
     transform: translateX(-75%);
 }
 
@@ -249,22 +256,18 @@ KUVAKARUSELLI
 
 .karuselli-napit label {
     display: inline-block;
-
     width: 14px;
     height: 14px;
-
     border-radius: 50%;
-
-    background-color: rgba(255,255,255,0.8);
-
+    background-color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
-
     margin: 0 5px;
 }
 
 .karuselli-napit label:hover {
     background-color: #222
 }
+
 /*-------------------------------------------------------------------------------------------------
 ETUSIVUN AJANKOHTAISTA JA LOUNASLISTA
 --------------------------------------------------------------------------------------------------*/
@@ -273,6 +276,7 @@ ETUSIVUN AJANKOHTAISTA JA LOUNASLISTA
     grid-template-columns: 3fr 1fr;
     gap: 30px;
 }
+
 /*-------------------------------------------------------------------------------------------------
 AJANKOHTAISTA
 --------------------------------------------------------------------------------------------------*/
@@ -302,12 +306,14 @@ time {
     font-style: italic;
     margin-bottom: 10px;
 }
+
 /*-------------------------------------------------------------------------------------------------
 LOUNASLISTA
 --------------------------------------------------------------------------------------------------*/
 .lounasalue {
     width: 100%;
 }
+
 .lounasalue h2 {
     color: #222;
     text-align: center;
@@ -331,6 +337,7 @@ aside h3 {
 aside p {
     color: #f7a01e;
 }
+
 /*-------------------------------------------------------------------------------------------------
 KAHVILATUOTTEET Ja TILAUTUOTTEET
 --------------------------------------------------------------------------------------------------*/
@@ -390,6 +397,7 @@ MEISTÄ SIVU
     display: block;
     margin: 20px auto;
 }
+
 /*-------------------------------------------------------------------------------------------------
 FOOTER
 --------------------------------------------------------------------------------------------------*/
@@ -416,6 +424,7 @@ footer a {
     color: #f7a01e;
     text-decoration: none;
 }
+
 /*-------------------------------------------------------------------------------------------------
 KARTTA
 --------------------------------------------------------------------------------------------------*/
@@ -425,17 +434,18 @@ KARTTA
     height: 200px;
     border-radius: 10px;
 }
+
 /*-------------------------------------------------------------------------------------------------
 SOME LOGOT
 --------------------------------------------------------------------------------------------------*/
 .some-linkit a {
-color: white;
-font-size: 30px;
-margin-right: 15px;
-text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin-right: 15px;
+    text-decoration: none;
 }
 
 .some-linkit a:hover {
-color: #f7a01e;
-transition: color 0.3s;
+    color: #f7a01e;
+    transition: color 0.3s;
 }
